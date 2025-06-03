@@ -11,7 +11,7 @@ const generatePassword = (length: number, complexity: number): string => {
   const numbers = '0123456789';
   const symbols = '!@#$%'; // Limited symbols for safety
   let chars = lowercase;
-
+   
   // Always include numbers and special characters
   chars += numbers + symbols;
 
