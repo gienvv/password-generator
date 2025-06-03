@@ -12,10 +12,11 @@ const generatePassword = (length: number, complexity: number): string => {
   const symbols = '!@#$%'; // Limited symbols for safety
   let chars = lowercase;
 
+  // Always include numbers and special characters
+  chars += numbers + symbols;
+
   // Adjust character set based on complexity (1–5)
   if (complexity >= 2) chars += uppercase;
-  if (complexity >= 3) chars += numbers;
-  if (complexity >= 4) chars += symbols;
 
   let password = '';
   for (let i = 0; i < length; i++) {
