@@ -1,5 +1,6 @@
 {
   "name": "password-generator",
+  "homepage": "https://gienvv.github.io/password-generator",
   "version": "1.0.0",
   "private": true,
   "scripts": {
